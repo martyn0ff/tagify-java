@@ -12,7 +12,7 @@ This application requires Java 11+ already installed on your machine and your ow
 - Application name: Tagify
 - Redirect URI: http://localhost:42069/callback (feel free to change port number, but make sure to leave hostname as localhost)
 
-The fat jar can be found in `build/libs` folder in a file named `tagify.jar`. First, run it with `java -jar tagify.jar`, this will create config.cfg in the same folder as this file. Set your Spotify application's Client ID by issuing `java -jar tagify.jar setSpotifyClientId <YOUR CLIENT ID>`. After that, you are ready to use Tagify. Run Tagify, click on authorization link then sit back and wait for Tagify to do its magic.
+The fat jar can be found in `build/libs` folder in a file named `tagify.jar`. First, run it with `java -jar tagify.jar`, this will create `config.cfg` in the same folder as this file. Set your Spotify application's Client ID by issuing `java -jar tagify.jar setSpotifyClientId <YOUR CLIENT ID>`. After that, you are ready to use Tagify. Run Tagify, click on authorization link then sit back and wait for Tagify to do its magic.
 
 # Bugs
 Report if you find any!
