@@ -173,8 +173,6 @@ public class App {
             return untaggedPlaylistTrackId[0];
     }
 
-    // TODO Make stuff work in async
-    // TODO Serialize!
     private Map<String, List<String>> taggedTrackIdPlaylistIdsMap(SpotifyApi spotifyApi) throws IOException, SpotifyWebApiException, ParseException {
 
             int offset = 0;
@@ -277,7 +275,6 @@ public class App {
         String[] trackIdsToAddArray = trackIdsToAddList.toArray(new String[0]);
         List<JsonArray> trackIdsToAddJsonArrayList = new LinkedList<>();
 
-        // TODO Add splitting of an iterable to Util class?
         for (int i = 0; i < trackIdsToAddArray.length; i += chunkSize) {
             JsonArray trackIdsToAddJsonArray = new JsonArray();
             String[] chunk = Arrays.copyOfRange(trackIdsToAddArray,
@@ -320,7 +317,6 @@ public class App {
 
             trackIdsToRemoveArray = trackIdsToRemoveList.toArray(new String[0]);
 
-            // TODO Add splitting of an iterable to Util class?
             for (int i = 0; i < trackIdsToRemoveArray.length; i += chunkSize) {
                 JsonArray trackIdsToRemoveJsonArray = new JsonArray();
                 String[] chunk = Arrays.copyOfRange(trackIdsToRemoveArray,
